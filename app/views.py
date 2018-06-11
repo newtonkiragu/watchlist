@@ -7,4 +7,12 @@ def index():
     '''
     view root page function that returns index and it\'s data
     '''
-    return render_template('index.html')
+    message = 'Hello! I am a variable!'
+    return render_template('index.html', message = message)
+
+@app.route('/movie/<movie_id>')
+def movie(movie_id):
+    '''
+    view movie page function that returns movies and all it\'s data
+    '''
+    return render_template('movie.html', id = movie_id)
