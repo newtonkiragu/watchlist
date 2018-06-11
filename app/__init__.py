@@ -9,3 +9,7 @@ app.config.from_object(DevConfig)
 app.config.from_pyfile('config.py')
 
 from app import views
+
+#registering the model blueprint
+from .models import models as models_blueprint
+app.register_blueprint(models_blueprint)
