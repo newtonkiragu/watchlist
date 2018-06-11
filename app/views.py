@@ -15,5 +15,5 @@ def movie(movie_id):
     '''
     view movie page function that returns movies and all it\'s data
     '''
-    title = 'Home - Welcome to the best movie review website online'
-    return render_template('movie.html', id = movie_id)
+    title = 'Movie - Welcome to the best movie review website online'
+    return render_template('movie.html', title = title, id = movie_id)
