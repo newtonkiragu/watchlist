@@ -1,3 +1,3 @@
-from flask import Blueprint
-models = Blueprint('models',__name__)
-from . import movie
+# from flask import Blueprint
+# models = Blueprint('models',__name__)
+# from . import movie
