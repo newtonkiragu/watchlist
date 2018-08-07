@@ -7,8 +7,8 @@ class  Config:
 
     MOVIE_API_BASE_URL = 'https://api.themoviedb.org/3/movie/{}?api_key={}'
     MOVIE_API_KEY = '6809e9daeffd8c82b4ef74b653ae5ff7'
-    SECRET_KEY = os.environ.get('SECRET_KEY')
-    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://monster:manager666@localhost/watchlist'    
+    SECRET_KEY = 'iamasecretkey'
+    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://monster:manager666@localhost/watchlist'
 
 class ProdConfig(Config):
     '''
